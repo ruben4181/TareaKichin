@@ -1,0 +1,67 @@
+{
+	"info": {
+		"_postman_id": "2522a117-d6c9-440b-b2e2-eaa0bd5d44b1",
+		"name": "WsMobileReplica",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://replica.javerianacali.edu.co:8100/WSMobile/mobile/v2/Autenticacion/?usu=LEON0502&pass=8dvqpCOilm/S/vPDkQPxxQ==",
+					"protocol": "http",
+					"host": [
+						"replica",
+						"javerianacali",
+						"edu",
+						"co"
+					],
+					"port": "8100",
+					"path": [
+						"WSMobile",
+						"mobile",
+						"v2",
+						"Autenticacion",
+						""
+					],
+					"query": [
+						{
+							"key": "usu",
+							"value": "LEON0502"
+						},
+						{
+							"key": "pass",
+							"value": "8dvqpCOilm/S/vPDkQPxxQ=="
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Asignaturas",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-t6519fdd1s5q",
+						"value": "eyJhbGciOiJIUzUxMiJ9.eyJleHAiOjE1NDEwNDIzMjksInN1YiI6IlNBTlRJR1JBTkFEQTEyMiJ9.SBokQQE_48aQRlqL6BZnbCah_TqKenYSYYloZVS3WUqICb6CPtbW-C56-Kf-yfvdvGq6ccyfUia7aLFTuNHmOw"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://replica.javerianacali.edu.co:8100/WSMobile/mobile/v2/asignaturas"
+			},
+			"response": []
+		}
+	]
+}
